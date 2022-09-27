@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>HTML Video & Subtitle</h1>
+<video id="MyVideo" >
+        <source src="Video-1.mp4" type="video/mp4">
+        <track src="SubtitleIndonesia.vtt" kind="subtitles" srclang="id" label="Indonesia">
+        <track src="SubtitleEnglish.vtt" kind="subtitles" srclang="en" label="English">
+</video>
+<p>
+        <button type="button" onclick="playvideo()">play</button>
+        <button type="button" onclick="pausevideo()">pause</button>
+        <button type="button" onclick="duration()">duration</button>
+        <button type="button" onclick="controlon()">control on</button>
+        <button type="button" onclick="controloff()">control off</button>
+</p>
+</body>
+<script>
+    var video = document.getElementById("MyVideo")
+    function playvideo(){
+        video.play();
+    }
+    function pausevideo(){
+        video.pause();
+    }
+    function controlon(){
+        video.controls = true;
+    }
+    function controloff(){
+        video.controls = false;
+    }
+    function duration(){
+        alert(video.duration);
+    }
+</script>
+</html>
