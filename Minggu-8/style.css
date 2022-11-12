@@ -1,0 +1,58 @@
+*{
+    box-sizing : border-box;
+}
+
+header{
+    padding: 30px;
+    text-align: center;
+    border : 1px solid rgb(0, 113, 128);
+    background-color: rgb(109, 161, 240);
+}
+
+nav{
+    float: left;
+    width : 20%;
+}
+
+nav ul{
+    list-style-type: none;
+    border: 1px solid rgb(110, 164, 214);
+    background-color: rgb(223, 144, 196);
+    text-align: center;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+nav ul li a{
+    display: block;
+    color: rgb(132, 86, 218);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: steelblue;
+    color: #6bcedb;
+}
+
+article{
+    float: left;
+    width: 80%;
+    border: 1px solid green;
+    background-color: rgb(92, 173, 211);
+    padding: 0 20px;
+}
+
+footer{
+    text-align: center;
+}
+
+.satu{
+    font-family: monospace;
+    color: cornflowerblue;
+}
+
+.dua{
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson;
+}
