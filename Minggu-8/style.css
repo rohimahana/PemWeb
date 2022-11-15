@@ -5,8 +5,8 @@
 header{
     padding: 30px;
     text-align: center;
-    border : 1px solid rgb(0, 113, 128);
-    background-color: rgb(109, 161, 240);
+    border : 1px solid rgb(128, 101, 226);
+    background-color: rgb(144, 109, 240);
 }
 
 nav{
@@ -16,8 +16,8 @@ nav{
 
 nav ul{
     list-style-type: none;
-    border: 1px solid rgb(110, 164, 214);
-    background-color: rgb(223, 144, 196);
+    border: 1px solid rgb(158, 110, 214);
+    background-color: rgb(180, 117, 216);
     text-align: center;
     padding: 0px;
     margin-top: 0px;
@@ -25,7 +25,7 @@ nav ul{
 
 nav ul li a{
     display: block;
-    color: rgb(132, 86, 218);
+    color: rgb(88, 58, 145);
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -38,7 +38,7 @@ nav ul li a:hover{
 article{
     float: left;
     width: 80%;
-    border: 1px solid green;
+    border: 1px solid rgb(120, 118, 230);
     background-color: rgb(92, 173, 211);
     padding: 0 20px;
 }
@@ -49,7 +49,7 @@ footer{
 
 .satu{
     font-family: monospace;
-    color: cornflowerblue;
+    color: rgb(178, 100, 197);
 }
 
 .dua{
