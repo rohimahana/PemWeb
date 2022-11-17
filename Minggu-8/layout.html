@@ -10,29 +10,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semantic Element - HTML 5</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            border: 1px solid lightgray;
+            padding: 25px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+            border: 1px solid lightgray;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <header style="background-color: rgb(93, 115, 214)">
+    <header>
         <h2>Judul Halaman / Header</h2>
     </header>
-    <nav style="background-color: rgb(231, 22, 238)">
-        <ul>
-            <li><a href="#">Menu 1</a></li>
-            <li><a href="#">Menu 2</a></li>
-        </ul>
-    </nav>
-    <article>
-        <h4 style="background-color: rgb(163, 90, 223)">Isi</h4>
-        <p>
-            Seventeen (Hangul: 세븐틴; ditulis sebagai SEVENTEEN atau SVT) adalah sebuah boy band asal Korea Selatan yang
-            dibentuk oleh <span style="font-size:35px">Pledis Entertainment</span>. Grup yang terdiri dari 13 anggota ini dibagi berdasarkan spesialisasi
-            keahlian masing-masing ke dalam 3 sub-unit; hip-hop unit, vokal unit, dan performance unit. Kata "seventeen"
-            yang berarti "tujuh belas" merupakan gabungan dari jumlah keseluruhan anggota mereka, jumlah sub-unit, dan
-            angka 1 yang berarti "kesatuan tim".
-        </p>
+    <main class="row">
+        <nav class="col-12">
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+        </nav>
+        <article class="col-12">
+            <h4>Judul Isi</h4>
+            <p><img src="seventeen.jpg" class="col-3" style="margin: 0 10px;">
+                Seventeen (Hangul: 세븐틴; ditulis sebagai SEVENTEEN atau SVT) adalah sebuah boy band asal Korea Selatan
+                yang
+                dibentuk oleh <span style="font-size:35px">Pledis Entertainment</span>. Grup yang terdiri dari 13
+                anggota ini dibagi berdasarkan spesialisasi
+                keahlian masing-masing ke dalam 3 sub-unit; hip-hop unit, vokal unit, dan performance unit. Kata
+                "seventeen"
+                yang berarti "tujuh belas" merupakan gabungan dari jumlah keseluruhan anggota mereka, jumlah sub-unit,
+                dan
+                angka 1 yang berarti "kesatuan tim".
+            </p>
         </article>
-        <footer style="background-color: rgb(219, 95, 198)">Copyright <i>&copy;</i>pbw2022</footer>
+    </main>
+    <footer class="col-12">
+        copyright <i>&copy;</i> pbw2022
+    </footer>
 </body>
 
 </html>
